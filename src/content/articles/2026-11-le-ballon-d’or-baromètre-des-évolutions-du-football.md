@@ -8,7 +8,7 @@ chapo: Le Ballon d’Or est créé en 1956 par le magazine France Football et
   de 2022, sur la saison sportive d’août à juillet. Ce trophée fait partie
   intégrante du paysage footballistique depuis de nombreuses années. Il reflète
   par conséquent fidèlement ses évolutions et ses mutations
-image: ""
+image: https://thumb.canalplus.pro/http/unsafe/%7BresolutionXY%7D/smart/creativemedia-image.canalplus.pro/content/0001/68/c66270769ad975992f2d986ac6d8f3c022c4bfb0.jpeg
 ---
 Internationalisation et mondialisation
 
@@ -17,8 +17,6 @@ Le Ballon d’Or est, lors de sa création, réservé exclusivement aux football
 L’ère Messi-Ronaldo, starification et individualisation
 
 Cette évolution atteint une nouvelle dimension à partir de la fin des années 2000 avec l’émergence d’une rivalité devenue emblématique : celle de Lionel Messi et Cristiano Ronaldo. Le Portugais et l’Argentin ne laissent que des miettes à la concurrence et, entre 2008 et 2019, se partagent onze des douze Ballons d’Or attribués (six pour Messi, cinq pour Ronaldo). À la lumière de leurs performances statistiques et d’une régularité à très haut niveau jamais atteint, leur opposition dépasse rapidement le simple cadre sportif. Chaque performance, chaque statistique et chaque distinction deviennent des éléments de comparaison entre les deux joueurs. Toutefois, les exploits ahurissants de Cristiano et Léo éclipsent les performances collectives de leurs équipes respectives. En effet, leurs coéquipiers se sont mis à leur service et ont accepté une plus faible contribution défensive, puisqu’en contrepartie, Messi et Ronaldo avaient un apport statistique incommensurable. Cependant, ce modèle ne fonctionne et ne peut perdurer que lorsque, comme c’est le cas avec Messi et Ronaldo, la contribution statistique fait presque oublier les quelques errements défensifs.
-
- 
 
 Foot d’aujourd’hui et de demain : un pour tous, tous pour un
 
@@ -30,4 +28,4 @@ Le football de sélection ne fait pas exception et l’Espagne de Luis de la Fue
 
 L’Espagne et le PSG sont les témoins des nouvelles formes que prennent les équipes hégémoniques sur les grandes compétitions. Des équipes où toutes les individualités se dévouent et se mettent au service du collectif tout en restant dans la course pour les distinctions individuelles, notamment le Ballon d’Or.
 
-![](https://thumb.canalplus.pro/http/unsafe/%7BresolutionXY%7D/smart/creativemedia-image.canalplus.pro/content/0001/68/c66270769ad975992f2d986ac6d8f3c022c4bfb0.jpeg)
+![]()
