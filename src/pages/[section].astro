@@ -1,0 +1,28 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { SECTIONS, fmt } from '../lib';
+export function getStaticPaths() {
+  return SECTIONS.map((s) => ({ params: { section: s.slug }, props: { s } }));
+}
+const { s } = Astro.props;
+const items = (await getCollection('articles'))
+  .filter((a) => a.data.section === s.name)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+<Base title={`${s.name} — À CONTRE-PIED`} active={s.slug}>
+  <main class="wrap">
+    <div class="pagehead"><h1>{s.name}</h1><p>{s.intro}</p></div>
+    <section class="list">
+      {items.length === 0 && <p class="empty">Pas encore d’article dans cette rubrique.</p>}
+      {items.map((a) => (
+        <article>
+          <span class="tag">{a.data.section}</span>
+          <h3><a href={`/articles/${a.id}/`}>{a.data.title}</a></h3>
+          {a.data.chapo && <p>{a.data.chapo}</p>}
+          <p class="meta">Par {a.data.author} · {fmt(a.data.date)}</p>
+        </article>
+      ))}
+    </section>
+  </main>
+</Base>

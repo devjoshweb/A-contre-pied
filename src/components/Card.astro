@@ -1,0 +1,9 @@
+---
+import { fmt } from '../lib';
+const { a } = Astro.props;
+---
+<article>
+  <span class="tag">{a.data.section}</span>
+  <h3><a href={`/articles/${a.id}/`}>{a.data.title}</a></h3>
+  <p class="meta">{a.data.author} · {fmt(a.data.date)}</p>
+</article>
