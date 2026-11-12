@@ -8,7 +8,7 @@ chapo: Le Ballon d’Or est créé en 1956 par le magazine France Football et
   de 2022, sur la saison sportive d’août à juillet. Ce trophée fait partie
   intégrante du paysage footballistique depuis de nombreuses années. Il reflète
   par conséquent fidèlement ses évolutions et ses mutations
-image: https://thumb.canalplus.pro/http/unsafe/%7BresolutionXY%7D/smart/creativemedia-image.canalplus.pro/content/0001/68/c66270769ad975992f2d986ac6d8f3c022c4bfb0.jpeg
+image: ""
 ---
 Internationalisation et mondialisation
 
