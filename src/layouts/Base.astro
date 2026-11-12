@@ -1,0 +1,37 @@
+---
+import '../styles/global.css';
+import Newsletter from '../components/Newsletter.astro';
+import { SECTIONS } from '../lib';
+const { title = 'À CONTRE-PIED — L’actualité sous un autre angle', description = 'À CONTRE-PIED — L’actualité sous un autre angle.', active = '', newsletter = true, image } = Astro.props;
+const today = new Date().toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+---
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  {image && <meta property="og:image" content={image} />}
+  <meta name="theme-color" content="#F4F0E8" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="top"><div class="wrap">
+    <div class="bar"><span>Média en ligne indépendant</span><span>{today}</span></div>
+    <a class="logo" href="/"><b>À CONTRE<i>-</i>PIED</b><small>L’actualité sous un autre angle</small></a>
+    <nav class="main">
+      {SECTIONS.map((s) => <a href={`/${s.slug}/`} class={active === s.slug ? 'on' : ''}>{s.name}</a>)}
+      <a href="/a-propos/" class={active === 'apropos' ? 'on' : ''}>À propos</a>
+    </nav>
+  </div></header>
+  <slot />
+  {newsletter && <Newsletter />}
+  <footer class="wrap">
+    <span>© À CONTRE-PIED — Tous droits réservés</span>
+    <span><a href="/a-propos/">À propos</a></span>
+  </footer>
+</body>
+</html>

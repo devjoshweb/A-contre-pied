@@ -1,0 +1,23 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { slugOf, fmt } from '../../lib';
+export async function getStaticPaths() {
+  const all = await getCollection('articles');
+  return all.map((a) => ({ params: { slug: a.id }, props: { a } }));
+}
+const { a } = Astro.props;
+const { Content } = await render(a);
+---
+<Base title={`${a.data.title} — À CONTRE-PIED`} description={a.data.chapo || undefined} active={slugOf(a.data.section)} image={a.data.image}>
+  <main>
+    <article class="art">
+      <span class="tag">{a.data.section}</span>
+      <h1>{a.data.title}</h1>
+      <p class="meta">Par {a.data.author} · {fmt(a.data.date)}</p>
+      {a.data.image && <img class="cover" src={a.data.image} alt="" />}
+      {a.data.chapo && <p class="chapo">{a.data.chapo}</p>}
+      <Content />
+    </article>
+  </main>
+</Base>
